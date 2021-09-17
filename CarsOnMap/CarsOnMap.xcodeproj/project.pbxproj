@@ -125,13 +125,8 @@
 			children = (
 				E586A67726F4D5F000E929BB /* Model */,
 				E586A65D26F4D35200E929BB /* Networking */,
-				E586A62D26F4D1CD00E929BB /* AppDelegate.swift */,
-				E586A62F26F4D1CD00E929BB /* SceneDelegate.swift */,
-				E586A63126F4D1CD00E929BB /* ViewController.swift */,
-				E586A63326F4D1CD00E929BB /* Main.storyboard */,
-				E586A63626F4D1D000E929BB /* Assets.xcassets */,
-				E586A63826F4D1D000E929BB /* LaunchScreen.storyboard */,
-				E586A63B26F4D1D000E929BB /* Info.plist */,
+				E586A67A26F4DBBC00E929BB /* Resources */,
+				E586A67B26F4DBE600E929BB /* UI */,
 			);
 			path = CarsOnMap;
 			sourceTree = "<group>";
@@ -202,6 +197,27 @@
 				E586A67826F4D5FF00E929BB /* Cars.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E586A67A26F4DBBC00E929BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E586A62D26F4D1CD00E929BB /* AppDelegate.swift */,
+				E586A62F26F4D1CD00E929BB /* SceneDelegate.swift */,
+				E586A63626F4D1D000E929BB /* Assets.xcassets */,
+				E586A63826F4D1D000E929BB /* LaunchScreen.storyboard */,
+				E586A63B26F4D1D000E929BB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E586A67B26F4DBE600E929BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E586A63326F4D1CD00E929BB /* Main.storyboard */,
+				E586A63126F4D1CD00E929BB /* ViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

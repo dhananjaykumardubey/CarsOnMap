@@ -1,24 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="roD-75-1SZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Maps View Controller-->
+        <scene sceneID="0w0-fs-haP">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="MapsViewController" id="am1-XG-p6O" customClass="MapsViewController" customModule="CarsOnMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ulE-7S-oxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sns-yQ-EtS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="881"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IG0-bQ-mE4"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9NG-dV-xMX"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="sns-yQ-EtS" id="yMV-f3-YVa"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBs-bf-Th0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1144.9275362318842" y="497.54464285714283"/>
+        </scene>
+        <!--Car List View Controller-->
+        <scene sceneID="JKo-t3-EC7">
+            <objects>
+                <viewController storyboardIdentifier="CarListViewController" id="p0s-NV-UW1" customClass="CarListViewController" customModule="CarsOnMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HkK-iE-qO5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3H3-4H-7bl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uEk-iJ-DyT"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3H3-4H-7bl" firstAttribute="top" secondItem="uEk-iJ-DyT" secondAttribute="top" id="BDR-bu-BKX"/>
+                            <constraint firstItem="3H3-4H-7bl" firstAttribute="bottom" secondItem="uEk-iJ-DyT" secondAttribute="bottom" id="FK1-sA-3Zi"/>
+                            <constraint firstItem="3H3-4H-7bl" firstAttribute="leading" secondItem="uEk-iJ-DyT" secondAttribute="leading" id="Qv2-e6-fK9"/>
+                            <constraint firstItem="3H3-4H-7bl" firstAttribute="trailing" secondItem="uEk-iJ-DyT" secondAttribute="trailing" id="nvd-tl-qk3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r3h-Gm-odG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbC-9I-08w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="-335.49107142857139"/>
+        </scene>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="s6q-ka-GsH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltL-6A-rf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="RootTabBarController" id="roD-75-1SZ" customClass="RootTabBarController" customModule="CarsOnMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nyB-1R-vum">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Sc-sC-96L" kind="relationship" relationship="viewControllers" id="Pgn-SV-cx5"/>
+                        <segue destination="AXc-fi-q8g" kind="relationship" relationship="viewControllers" id="1fz-lS-V3A"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-731" y="-31"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="YX1-9L-MLY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAv-CP-vBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="AXc-fi-q8g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Zp2-io-vdv"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRO-bw-exM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="am1-XG-p6O" kind="relationship" relationship="rootViewController" id="33h-gw-mtU"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="497.54464285714283"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="W7D-D1-cJ9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nev-W4-Jba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Sc-sC-96L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="2Zc-7P-2Eq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e32-lh-B8O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p0s-NV-UW1" kind="relationship" relationship="rootViewController" id="HZt-Pf-9uU"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="159.42028985507247" y="-335.49107142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -15,10 +15,11 @@ class MapItem: NSObject, MKAnnotation {
     
     let image: Image?
     let coordinate: CLLocationCoordinate2D
-
-    init(coordinate: CLLocationCoordinate2D, image: Image?) {
-        
+    let title: String?
+    
+    init(coordinate: CLLocationCoordinate2D, image: Image?, title: String?) {
         self.coordinate = coordinate
         self.image = image
+        self.title = title
     }
 }

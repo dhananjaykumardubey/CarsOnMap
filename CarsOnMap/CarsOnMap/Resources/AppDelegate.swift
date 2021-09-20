@@ -26,10 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
 //        // Use this method to select a configuration to create the new scene with.
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = RootTabBarController()
-//        self.window?.makeKeyAndVisible()
-//        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = RootTabBarController()
+        self.window?.makeKeyAndVisible()
+        
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 

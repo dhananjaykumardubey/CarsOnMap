@@ -53,7 +53,10 @@ class MapViewModel {
         else { return }
         
         let mapItems = cars.compactMap { item -> MapItem in
-            return MapItem.init(coordinate: CLLocationCoordinate2D.init(latitude: item.latitude, longitude: item.longitude), image: Image.init(item.carImageURL))
+            return MapItem(coordinate: CLLocationCoordinate2D(latitude: item.latitude,
+                                                              longitude: item.longitude),
+                           image: Image.init(item.carImageURL),
+                           title: item.licensePlate)
         }
         self.mapItems?(mapItems)
     }

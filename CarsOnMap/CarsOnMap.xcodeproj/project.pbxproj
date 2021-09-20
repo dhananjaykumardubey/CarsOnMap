@@ -24,6 +24,9 @@
 		91B775D626F5B4A7004FFF13 /* UIGraphicsImageRenderer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B775D526F5B4A7004FFF13 /* UIGraphicsImageRenderer+Image.swift */; };
 		91B775DB26F5B4B9004FFF13 /* String+Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B775DA26F5B4B9004FFF13 /* String+Cluster.swift */; };
 		91B775E026F5B4F7004FFF13 /* CarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B775DF26F5B4F7004FFF13 /* CarAnnotationView.swift */; };
+		91B775EF26F83956004FFF13 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B775EE26F83956004FFF13 /* VehicleCell.xib */; };
+		91B775F426F83C3E004FFF13 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B775F326F83C3E004FFF13 /* UIImageView+Additions.swift */; };
+		91B775F926F83D3B004FFF13 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B775F826F83D3B004FFF13 /* VehicleCell.swift */; };
 		E586A62E26F4D1CD00E929BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586A62D26F4D1CD00E929BB /* AppDelegate.swift */; };
 		E586A63026F4D1CD00E929BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586A62F26F4D1CD00E929BB /* SceneDelegate.swift */; };
 		E586A63526F4D1CD00E929BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586A63326F4D1CD00E929BB /* Main.storyboard */; };
@@ -80,6 +83,9 @@
 		91B775D526F5B4A7004FFF13 /* UIGraphicsImageRenderer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRenderer+Image.swift"; sourceTree = "<group>"; };
 		91B775DA26F5B4B9004FFF13 /* String+Cluster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Cluster.swift"; sourceTree = "<group>"; };
 		91B775DF26F5B4F7004FFF13 /* CarAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotationView.swift; sourceTree = "<group>"; };
+		91B775EE26F83956004FFF13 /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
+		91B775F326F83C3E004FFF13 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
+		91B775F826F83D3B004FFF13 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		E586A62A26F4D1CD00E929BB /* CarsOnMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsOnMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E586A62D26F4D1CD00E929BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E586A62F26F4D1CD00E929BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 			children = (
 				91B7755D26F59BF3004FFF13 /* CLLocationCoordinate2D+Equatable.swift */,
 				91B775D526F5B4A7004FFF13 /* UIGraphicsImageRenderer+Image.swift */,
+				91B775F326F83C3E004FFF13 /* UIImageView+Additions.swift */,
 				91B7756526F59C1E004FFF13 /* MKMapView+Enhancements.swift */,
 				91B775DA26F5B4B9004FFF13 /* String+Cluster.swift */,
 				91B7756A26F59C32004FFF13 /* Nib.swift */,
@@ -277,7 +284,9 @@
 				E586A63326F4D1CD00E929BB /* Main.storyboard */,
 				91B7759E26F59EDF004FFF13 /* RootTabBarController.swift */,
 				91B775B126F5A834004FFF13 /* CarListViewController.swift */,
+				91B775EE26F83956004FFF13 /* VehicleCell.xib */,
 				91B775D026F5B483004FFF13 /* ClusterAnnotationView.swift */,
+				91B775F826F83D3B004FFF13 /* VehicleCell.swift */,
 				91B775DF26F5B4F7004FFF13 /* CarAnnotationView.swift */,
 				91B775B926F5A862004FFF13 /* MapsViewController.swift */,
 			);
@@ -387,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B775EF26F83956004FFF13 /* VehicleCell.xib in Resources */,
 				E586A63A26F4D1D000E929BB /* LaunchScreen.storyboard in Resources */,
 				E586A63726F4D1D000E929BB /* Assets.xcassets in Resources */,
 				E586A63526F4D1CD00E929BB /* Main.storyboard in Resources */,
@@ -442,7 +452,9 @@
 				91B7757526F59C88004FFF13 /* ThreadUtils.swift in Sources */,
 				E586A66F26F4D35200E929BB /* ContentFetcher.swift in Sources */,
 				E586A63026F4D1CD00E929BB /* SceneDelegate.swift in Sources */,
+				91B775F426F83C3E004FFF13 /* UIImageView+Additions.swift in Sources */,
 				91B7759F26F59EDF004FFF13 /* RootTabBarController.swift in Sources */,
+				91B775F926F83D3B004FFF13 /* VehicleCell.swift in Sources */,
 				91B775D126F5B483004FFF13 /* ClusterAnnotationView.swift in Sources */,
 				91B775CC26F5B2AF004FFF13 /* MapViewModel.swift in Sources */,
 			);
